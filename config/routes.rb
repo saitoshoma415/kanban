@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'top#index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :list, only: %i(new create edit update destroy) do
-    resources :card, only: %i(new create show)
+    resources :card, except: %i(index)
   end
 end
 
