@@ -16,7 +16,6 @@ class ListController < ApplicationController
 		end
 	
 		def edit
-			redirect_to'top'
 		end
 
 		def update
